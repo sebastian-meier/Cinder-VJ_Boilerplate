@@ -73,13 +73,13 @@
 		693479C018075767006AE7C9 /* AudioViz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioViz.h; path = headers/Visuals/AudioViz.h; sourceTree = "<group>"; };
 		693479C21807FFC3006AE7C9 /* MidiControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MidiControllerConfig.h; path = headers/Midi/MidiControllerConfig.h; sourceTree = "<group>"; };
 		693479C318085F5F006AE7C9 /* WindowData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WindowData.h; path = headers/WindowData.h; sourceTree = "<group>"; };
-		69493186184A39ED0018BE3B /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _kiss_fft_guts.h; path = blocks/KissFFT/src/kiss/_kiss_fft_guts.h; sourceTree = "<group>"; };
-		69493187184A39ED0018BE3B /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fft.c; path = blocks/KissFFT/src/kiss/kiss_fft.c; sourceTree = "<group>"; };
-		69493188184A39ED0018BE3B /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fft.h; path = blocks/KissFFT/src/kiss/kiss_fft.h; sourceTree = "<group>"; };
-		69493189184A39ED0018BE3B /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fftr.c; path = blocks/KissFFT/src/kiss/kiss_fftr.c; sourceTree = "<group>"; };
-		6949318A184A39ED0018BE3B /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fftr.h; path = blocks/KissFFT/src/kiss/kiss_fftr.h; sourceTree = "<group>"; };
-		6949318B184A39ED0018BE3B /* KissFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KissFFT.cpp; path = blocks/KissFFT/src/KissFFT.cpp; sourceTree = "<group>"; };
-		6949318C184A39ED0018BE3B /* KissFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KissFFT.h; path = blocks/KissFFT/src/KissFFT.h; sourceTree = "<group>"; };
+		69493186184A39ED0018BE3B /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		69493187184A39ED0018BE3B /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		69493188184A39ED0018BE3B /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		69493189184A39ED0018BE3B /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftr.c; sourceTree = "<group>"; };
+		6949318A184A39ED0018BE3B /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
+		6949318B184A39ED0018BE3B /* KissFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KissFFT.cpp; path = src/KissFFT.cpp; sourceTree = "<group>"; };
+		69623100184A95040055C120 /* KissFFT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KissFFT.h; path = src/KissFFT.h; sourceTree = "<group>"; };
 		69B454C017F9F4D4000312C2 /* VJ_Boilerplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VJ_Boilerplate.h; path = headers/VJ_Boilerplate.h; sourceTree = "<group>"; };
 		69B454C417FA0632000312C2 /* AudioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioAnalyzer.cpp; path = source/Audio/AudioAnalyzer.cpp; sourceTree = "<group>"; };
 		69B454C517FA0632000312C2 /* AudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioAnalyzer.h; path = headers/Audio/AudioAnalyzer.h; sourceTree = "<group>"; };
@@ -119,6 +119,7 @@
 				69493184184A39E20018BE3B /* KissFFT */,
 			);
 			name = Blocks;
+			path = blocks;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
@@ -287,9 +288,9 @@
 			children = (
 				69493185184A39ED0018BE3B /* kiss */,
 				6949318B184A39ED0018BE3B /* KissFFT.cpp */,
-				6949318C184A39ED0018BE3B /* KissFFT.h */,
+				69623100184A95040055C120 /* KissFFT.h */,
 			);
-			name = KissFFT;
+			path = KissFFT;
 			sourceTree = "<group>";
 		};
 		69493185184A39ED0018BE3B /* kiss */ = {
@@ -301,7 +302,8 @@
 				69493189184A39ED0018BE3B /* kiss_fftr.c */,
 				6949318A184A39ED0018BE3B /* kiss_fftr.h */,
 			);
-			path = kiss;
+			name = kiss;
+			path = src/kiss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,13 +415,14 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "\"$(CINDER_PATH)/lib";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-D__MACOSX_CORE__",
 				);
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
-					"../../blocks/KissFFT/lib/macosx/KissFFT_d.a\"",
+					"\"./blocks/KissFFT/lib/macosx/KissFFT_d.a\"",
 				);
 				PRODUCT_NAME = VJ_Boilerplate;
 				SYMROOT = ./build;
@@ -455,7 +458,7 @@
 				);
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder.a\"",
-					"../../blocks/KissFFT/lib/macosx/KissFFT.a\"",
+					"\"./blocks/KissFFT/lib/macosx/KissFFT.a\"",
 				);
 				PRODUCT_NAME = VJ_Boilerplate;
 				STRIP_INSTALLED_PRODUCT = YES;

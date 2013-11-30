@@ -38,7 +38,7 @@
 
 // Includes
 #include "cinder/CinderMath.h"
-#include "kiss/kiss_fftr.h"
+#include "kiss_fftr.h"
 
 // Alias for pointer to Kiss instance
 typedef std::shared_ptr<class Kiss> KissRef;
