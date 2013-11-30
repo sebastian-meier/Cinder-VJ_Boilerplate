@@ -9,6 +9,7 @@
 #include "AudioViz.h"
 
 void AudioViz::audioInput(int type, float value){
+    active = true;
     if(type == TTAudioInputType_Wave){
         value *= 1000000;
         values.push_back(value);

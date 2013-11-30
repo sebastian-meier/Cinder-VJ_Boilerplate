@@ -24,6 +24,5 @@ public:
     vector<float>fft;
     int border = 40;
     float timelineratio = 1.0;
-    bool active = true;
     bool peak = false;
 };

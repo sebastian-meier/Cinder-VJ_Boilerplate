@@ -169,15 +169,17 @@ void AudioAnalyzer::update(){
             mWaveform.erase( mWaveform.begin() );
         }
         
-        std::vector<float> fftvalues;
-        float *data = mFft->getAmplitude();
-        int sampleSize = mFft->getBinSize();
-        for ( int32_t n = 0; n < sampleSize && n < 128; ++n ){
-            fftvalues.push_back(data[n]);
+        if(mFft){
+            std::vector<float> fftvalues;
+            float *data = mFft->getAmplitude();
+            int sampleSize = mFft->getBinSize();
+            for ( int32_t n = 0; n < sampleSize && n < 128; ++n ){
+                fftvalues.push_back(data[n]);
+            }
+            for ( int32_t i = 0; i < mDataSize && i < 256; i++ ) {
+                fftvalues.push_back(mInputData[i]);
+            }
+            sendFFt(fftvalues);
         }
-        for ( int32_t i = 0; i < mDataSize && i < 256; i++ ) {
-            fftvalues.push_back(mInputData[i]);
-        }
-        sendFFt(fftvalues);
     }
 }

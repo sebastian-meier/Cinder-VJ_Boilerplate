@@ -26,7 +26,6 @@
 		693479A418072C58006AE7C9 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479A218072C58006AE7C9 /* CoreAudio.framework */; };
 		693479A618072C7B006AE7C9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479A518072C7B006AE7C9 /* AppKit.framework */; };
 		693479A818072C82006AE7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479A718072C82006AE7C9 /* Foundation.framework */; };
-		693479AA18072CCD006AE7C9 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479A918072CCD006AE7C9 /* QuickTime.framework */; };
 		693479AC18072CD9006AE7C9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479AB18072CD9006AE7C9 /* CoreServices.framework */; };
 		693479AE18072CE4006AE7C9 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479AD18072CE4006AE7C9 /* CoreMIDI.framework */; };
 		693479B018072D93006AE7C9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693479AF18072D93006AE7C9 /* Carbon.framework */; };
@@ -38,23 +37,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28067B77F7BE433DAF4B8A5D /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = headers/Resources.h; sourceTree = "<group>"; };
-		2903F6E08BBD4984B128B8E9 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = resources/CinderApp.icns; sourceTree = "<group>"; };
-		65EEF7AFD4BC4F098CC3BD8E /* VJ_Boilerplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = VJ_Boilerplate.cpp; path = source/VJ_Boilerplate.cpp; sourceTree = "<group>"; };
-		6919F93417F8B30B00C48A7C /* Visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Visual.cpp; path = source/Visuals/Visual.cpp; sourceTree = "<group>"; };
-		6919F93517F8B30B00C48A7C /* Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visual.h; path = headers/Visuals/Visual.h; sourceTree = "<group>"; };
-		6919F94317F8E73500C48A7C /* ColorOffset_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ColorOffset_frag.glsl; path = resources/shader/ColorOffset_frag.glsl; sourceTree = "<group>"; };
-		6919F94517F8E74000C48A7C /* ColorOffset_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ColorOffset_vert.glsl; path = resources/shader/ColorOffset_vert.glsl; sourceTree = "<group>"; };
-		691A7C191801CD7D001933E0 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = source/Shader/Shader.cpp; sourceTree = "<group>"; };
-		691A7C1A1801CD7D001933E0 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = headers/Shader/Shader.h; sourceTree = "<group>"; };
-		691A7C1F1801D14A001933E0 /* ColorOffset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ColorOffset.cpp; path = source/Shader/ColorOffset.cpp; sourceTree = "<group>"; };
-		691A7C201801D14A001933E0 /* ColorOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorOffset.h; path = headers/Shader/ColorOffset.h; sourceTree = "<group>"; };
-		693479681805DACF006AE7C9 /* RtError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RtError.h; path = headers/Midi/RtError.h; sourceTree = "<group>"; };
-		693479691805DACF006AE7C9 /* RtMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RtMidi.h; path = headers/Midi/RtMidi.h; sourceTree = "<group>"; };
-		6934796B1805DAEB006AE7C9 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RtMidi.cpp; path = source/Midi/RtMidi.cpp; sourceTree = "<group>"; };
-		693479811805E220006AE7C9 /* Midi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Midi.cpp; path = source/Midi/Midi.cpp; sourceTree = "<group>"; };
-		693479821805E220006AE7C9 /* Midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Midi.h; path = headers/Midi/Midi.h; sourceTree = "<group>"; };
-		6934798E18070A4A006AE7C9 /* AudioInputTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioInputTypes.h; path = headers/Audio/AudioInputTypes.h; sourceTree = "<group>"; };
+		28067B77F7BE433DAF4B8A5D /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		2903F6E08BBD4984B128B8E9 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CinderApp.icns; sourceTree = "<group>"; };
+		65EEF7AFD4BC4F098CC3BD8E /* VJ_Boilerplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VJ_Boilerplate.cpp; sourceTree = "<group>"; };
+		6919F93417F8B30B00C48A7C /* Visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Visual.cpp; sourceTree = "<group>"; };
+		6919F93517F8B30B00C48A7C /* Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visual.h; sourceTree = "<group>"; };
+		6919F94317F8E73500C48A7C /* ColorOffset_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorOffset_frag.glsl; sourceTree = "<group>"; };
+		6919F94517F8E74000C48A7C /* ColorOffset_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorOffset_vert.glsl; sourceTree = "<group>"; };
+		691A7C191801CD7D001933E0 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		691A7C1A1801CD7D001933E0 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		691A7C1F1801D14A001933E0 /* ColorOffset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorOffset.cpp; sourceTree = "<group>"; };
+		691A7C201801D14A001933E0 /* ColorOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorOffset.h; sourceTree = "<group>"; };
+		693479681805DACF006AE7C9 /* RtError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
+		693479691805DACF006AE7C9 /* RtMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
+		6934796B1805DAEB006AE7C9 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		693479811805E220006AE7C9 /* Midi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Midi.cpp; sourceTree = "<group>"; };
+		693479821805E220006AE7C9 /* Midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Midi.h; sourceTree = "<group>"; };
+		6934798E18070A4A006AE7C9 /* AudioInputTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioInputTypes.h; sourceTree = "<group>"; };
 		6934799518072C26006AE7C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6934799718072C2E006AE7C9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		6934799918072C38006AE7C9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -65,14 +64,13 @@
 		693479A218072C58006AE7C9 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		693479A518072C7B006AE7C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		693479A718072C82006AE7C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		693479A918072CCD006AE7C9 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
 		693479AB18072CD9006AE7C9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		693479AD18072CE4006AE7C9 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		693479AF18072D93006AE7C9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		693479BF18075767006AE7C9 /* AudioViz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioViz.cpp; path = source/Visuals/AudioViz.cpp; sourceTree = "<group>"; };
-		693479C018075767006AE7C9 /* AudioViz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioViz.h; path = headers/Visuals/AudioViz.h; sourceTree = "<group>"; };
-		693479C21807FFC3006AE7C9 /* MidiControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MidiControllerConfig.h; path = headers/Midi/MidiControllerConfig.h; sourceTree = "<group>"; };
-		693479C318085F5F006AE7C9 /* WindowData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WindowData.h; path = headers/WindowData.h; sourceTree = "<group>"; };
+		693479BF18075767006AE7C9 /* AudioViz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioViz.cpp; sourceTree = "<group>"; };
+		693479C018075767006AE7C9 /* AudioViz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViz.h; sourceTree = "<group>"; };
+		693479C21807FFC3006AE7C9 /* MidiControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiControllerConfig.h; sourceTree = "<group>"; };
+		693479C318085F5F006AE7C9 /* WindowData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowData.h; sourceTree = "<group>"; };
 		69493186184A39ED0018BE3B /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
 		69493187184A39ED0018BE3B /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
 		69493188184A39ED0018BE3B /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
@@ -80,12 +78,12 @@
 		6949318A184A39ED0018BE3B /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
 		6949318B184A39ED0018BE3B /* KissFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KissFFT.cpp; path = src/KissFFT.cpp; sourceTree = "<group>"; };
 		69623100184A95040055C120 /* KissFFT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KissFFT.h; path = src/KissFFT.h; sourceTree = "<group>"; };
-		69B454C017F9F4D4000312C2 /* VJ_Boilerplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VJ_Boilerplate.h; path = headers/VJ_Boilerplate.h; sourceTree = "<group>"; };
-		69B454C417FA0632000312C2 /* AudioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioAnalyzer.cpp; path = source/Audio/AudioAnalyzer.cpp; sourceTree = "<group>"; };
-		69B454C517FA0632000312C2 /* AudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioAnalyzer.h; path = headers/Audio/AudioAnalyzer.h; sourceTree = "<group>"; };
+		69B454C017F9F4D4000312C2 /* VJ_Boilerplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VJ_Boilerplate.h; sourceTree = "<group>"; };
+		69B454C417FA0632000312C2 /* AudioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioAnalyzer.cpp; sourceTree = "<group>"; };
+		69B454C517FA0632000312C2 /* AudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioAnalyzer.h; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* VJ_Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VJ_Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6A7581D4EFC4BB9A6EBCD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF1622A3C6754847A6455616 /* VJ_Boilerplate_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VJ_Boilerplate_Prefix.pch; sourceTree = "<group>"; };
+		A6A7581D4EFC4BB9A6EBCD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../xcode/Info.plist; sourceTree = "<group>"; };
+		CF1622A3C6754847A6455616 /* VJ_Boilerplate_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VJ_Boilerplate_Prefix.pch; path = ../xcode/VJ_Boilerplate_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +94,6 @@
 				693479B018072D93006AE7C9 /* Carbon.framework in Frameworks */,
 				693479AE18072CE4006AE7C9 /* CoreMIDI.framework in Frameworks */,
 				693479AC18072CD9006AE7C9 /* CoreServices.framework in Frameworks */,
-				693479AA18072CCD006AE7C9 /* QuickTime.framework in Frameworks */,
 				693479A818072C82006AE7C9 /* Foundation.framework in Frameworks */,
 				693479A618072C7B006AE7C9 /* AppKit.framework in Frameworks */,
 				693479A318072C58006AE7C9 /* AudioUnit.framework in Frameworks */,
@@ -119,7 +116,7 @@
 				69493184184A39E20018BE3B /* KissFFT */,
 			);
 			name = Blocks;
-			path = blocks;
+			path = ../blocks;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
@@ -132,6 +129,7 @@
 				6919F93317F8B2C600C48A7C /* Visuals */,
 			);
 			name = Source;
+			path = ../source;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -168,6 +166,7 @@
 				693479C318085F5F006AE7C9 /* WindowData.h */,
 			);
 			name = Headers;
+			path = ../headers;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -178,6 +177,7 @@
 				A6A7581D4EFC4BB9A6EBCD4F /* Info.plist */,
 			);
 			name = Resources;
+			path = ../resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -186,7 +186,6 @@
 				693479AF18072D93006AE7C9 /* Carbon.framework */,
 				693479AD18072CE4006AE7C9 /* CoreMIDI.framework */,
 				693479AB18072CD9006AE7C9 /* CoreServices.framework */,
-				693479A918072CCD006AE7C9 /* QuickTime.framework */,
 				693479A718072C82006AE7C9 /* Foundation.framework */,
 				693479A518072C7B006AE7C9 /* AppKit.framework */,
 				693479A118072C58006AE7C9 /* AudioUnit.framework */,
@@ -207,7 +206,7 @@
 				6919F93417F8B30B00C48A7C /* Visual.cpp */,
 				693479BF18075767006AE7C9 /* AudioViz.cpp */,
 			);
-			name = Visuals;
+			path = Visuals;
 			sourceTree = "<group>";
 		};
 		6919F93A17F8B51B00C48A7C /* Visuals */ = {
@@ -216,7 +215,7 @@
 				6919F93517F8B30B00C48A7C /* Visual.h */,
 				693479C018075767006AE7C9 /* AudioViz.h */,
 			);
-			name = Visuals;
+			path = Visuals;
 			sourceTree = "<group>";
 		};
 		6919F93E17F8E6CC00C48A7C /* Shader */ = {
@@ -226,6 +225,7 @@
 				6919F94517F8E74000C48A7C /* ColorOffset_vert.glsl */,
 			);
 			name = Shader;
+			path = shader;
 			sourceTree = "<group>";
 		};
 		691A7C1718018FC3001933E0 /* Shader */ = {
@@ -234,7 +234,7 @@
 				691A7C191801CD7D001933E0 /* Shader.cpp */,
 				691A7C1F1801D14A001933E0 /* ColorOffset.cpp */,
 			);
-			name = Shader;
+			path = Shader;
 			sourceTree = "<group>";
 		};
 		691A7C1818018FCB001933E0 /* Shader */ = {
@@ -243,7 +243,7 @@
 				691A7C1A1801CD7D001933E0 /* Shader.h */,
 				691A7C201801D14A001933E0 /* ColorOffset.h */,
 			);
-			name = Shader;
+			path = Shader;
 			sourceTree = "<group>";
 		};
 		693479671805DAB9006AE7C9 /* Midi */ = {
@@ -254,7 +254,7 @@
 				693479691805DACF006AE7C9 /* RtMidi.h */,
 				693479C21807FFC3006AE7C9 /* MidiControllerConfig.h */,
 			);
-			name = Midi;
+			path = Midi;
 			sourceTree = "<group>";
 		};
 		6934796A1805DADC006AE7C9 /* Midi */ = {
@@ -263,7 +263,7 @@
 				693479811805E220006AE7C9 /* Midi.cpp */,
 				6934796B1805DAEB006AE7C9 /* RtMidi.cpp */,
 			);
-			name = Midi;
+			path = Midi;
 			sourceTree = "<group>";
 		};
 		693479891805F823006AE7C9 /* Audio */ = {
@@ -271,7 +271,7 @@
 			children = (
 				69B454C417FA0632000312C2 /* AudioAnalyzer.cpp */,
 			);
-			name = Audio;
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		6934798A1805F82D006AE7C9 /* Audio */ = {
@@ -280,7 +280,7 @@
 				69B454C517FA0632000312C2 /* AudioAnalyzer.h */,
 				6934798E18070A4A006AE7C9 /* AudioInputTypes.h */,
 			);
-			name = Audio;
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		69493184184A39E20018BE3B /* KissFFT */ = {
@@ -393,7 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CINDER_PATH = ../../cinder_0.8.4_mac;
+				CINDER_PATH = ../../../cinder_0.8.4_mac;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -415,17 +415,17 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "\"$(CINDER_PATH)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-D__MACOSX_CORE__",
-				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
-					"\"./blocks/KissFFT/lib/macosx/KissFFT_d.a\"",
+					"\"../blocks/KissFFT/lib/macosx/KissFFT_d.a\"",
 				);
 				PRODUCT_NAME = VJ_Boilerplate;
+				SDKROOT = macosx;
 				SYMROOT = ./build;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,8 +434,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				CINDER_PATH = ../../cinder_0.8.4_mac;
+				CINDER_PATH = ../../../cinder_0.8.4_mac;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -452,17 +453,17 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "\"$(CINDER_PATH)/lib";
-				OTHER_CPLUSPLUSFLAGS = (
-					"$(OTHER_CFLAGS)",
-					"-D__MACOSX_CORE__",
-				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
 					"\"$(CINDER_PATH)/lib/libcinder.a\"",
-					"\"./blocks/KissFFT/lib/macosx/KissFFT.a\"",
+					"\"../blocks/KissFFT/lib/macosx/KissFFT.a\"",
 				);
 				PRODUCT_NAME = VJ_Boilerplate;
+				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SYMROOT = ./build;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,7 +486,7 @@
 					"-D__MACOSX_CORE__",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../headers/**";
 			};
 			name = Debug;
 		};
@@ -497,6 +498,7 @@
 				CINDER_PATH = ../../../cinder_0.8.4_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
@@ -506,7 +508,7 @@
 					"-D__MACOSX_CORE__",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../headers/**";
 			};
 			name = Release;
 		};
