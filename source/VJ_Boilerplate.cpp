@@ -1,66 +1,89 @@
 #include "VJ_Boilerplate.h"
 
 void VJ_Boilerplate::prepareSettings( Settings *settings ){
-    //Retina Screens
+    //Add this if you want to enable Retina Screens
+    //Be aware that enabling this might drop your framerate
 	//settings->enableHighDensityDisplay();
 }
 
 void VJ_Boilerplate::setup(){
+    /*--- SCREEN #1 ---*/
+    //this is the display we can use to display controls ect.
     getWindow()->setUserData( new WindowData );
-    //setFullScreen(true);
     WindowData *data = getWindow()->getUserData<WindowData>();
-	data->type = 1;
-    setWindowSize(1024, 768);
-    getWindow()->setPos(10, 10);
-    //getWindow()->setAlwaysOnTop();
-    
+	data->type = 0;
+    setWindowSize(display_width1, display_height1);
+    getWindow()->setPos(display_x1, display_y1);
+    if(display_borderless1){    getWindow()->setBorderless();}
+    if(display_alwaysontop1){    getWindow()->setAlwaysOnTop();}
+    if(display_fullscreen1){    getWindow()->setFullScreen(true);}
+
+    /*--- SCREEN #2 ---*/
     vector<DisplayRef> displays = Display::getDisplays();
+    if(multiscreen && displays.size()>1){
+        //If there is a second screen and multiscreen = true
+        //There is a second window added where we can visualize ui elements, parameters, etc.
+        Window::Format WindowFormat = Window::Format();
+        WindowFormat.setDisplay(displays.at(display_id2));
+        WindowFormat.setPos(display_x2, display_y2);
+        WindowFormat.size( display_width2, display_height2 );
+
+        if(display_borderless2){    WindowFormat.setBorderless();}
+        if(display_alwaysontop2){   WindowFormat.setAlwaysOnTop();}
+        if(display_fullscreen2){    WindowFormat.setFullScreen(true);}
+
+        app::WindowRef newWindow = createWindow( WindowFormat );
+        newWindow->setUserData( new WindowData );
+        WindowData *data1 = newWindow->getUserData<WindowData>();
+        data1->type = 1;
+    }
     
-    Window::Format WindowFormat = Window::Format();
-    WindowFormat.setDisplay(displays.at(2));
-    WindowFormat.setBorderless();
-    WindowFormat.setPos(0, 125); //125
-    WindowFormat.size( 2048, 768 ); //2048
-    app::WindowRef newWindow = createWindow( WindowFormat );
-    
-	newWindow->setUserData( new WindowData );
-    WindowData *data1 = newWindow->getUserData<WindowData>();
-	data1->type = 0;
-    
-    //setFrameRate(10);
-    
+    /*--- MAIN SCENE ---*/
+    //Setting up our main scene, we will draw onto this and use it for our shaders later on
     gl::Fbo::Format format;
 	format.enableMipmapping(false);
-    //format.setWrap(GL_CLAMP_TO_BORDER_ARB, GL_CLAMP_TO_BORDER_ARB);
 	format.setCoverageSamples(16);
 	format.setSamples(4);
-    scene = gl::Fbo(app_width, app_height, format);
+    scene = gl::Fbo(display_width1, display_height1, format);
     
+    /*--- VISUALIZATIONS ---*/
     visuals.push_back(new AudioViz);
-    //Add more visuals here:
+    //add more visuals here:
+    //visuals.push_back(new VISUAL_CLASSNAME);
     
+    //initialize all visuals and register them for midi- and audio-events
     for(auto visual : visuals){
-        visual->setup(app_width, app_height);
+        visual->setup(display_width1, display_height1);
         visual->init();
         audio.registerListener(visual);
         midi.registerListener(visual);
     }
 
+    /*--- SHADERS ---*/
     shaders.push_back(new ColorOffset);
     shaders.at(0)->setup(SHADER_VERT_ColorOffset, SHADER_FRAG_ColorOffset);
-    //Add more shaders here:
+    //add more shaders here:
+    //shaders.push_back(new SHADER_CLASSNAME);
+    //shaders.at(0)->setup(SHADER_RESOURCE_VERT, SHADER_RESOURCE_FRAG);
+    
+    //register all shaders for midi- and audio-events
     for(auto shader : shaders){
         audio.registerListener(shader);
         midi.registerListener(shader);
     }
     
+    //initialize the midi and audio components
     midi.setup();
     audio.setup();
 }
 
 void VJ_Boilerplate::update(){
+    //update the midi and audio component
     midi.update();
     audio.update();
+    
+    //update the visuals
+    //only the visuals with parameter "active = true" get updated
     for(auto visual : visuals){
         visual->requestUpdate();
     }

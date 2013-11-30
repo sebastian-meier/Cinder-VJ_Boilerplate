@@ -73,13 +73,13 @@
 		693479C018075767006AE7C9 /* AudioViz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioViz.h; path = ../headers/Visuals/AudioViz.h; sourceTree = "<group>"; };
 		693479C21807FFC3006AE7C9 /* MidiControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MidiControllerConfig.h; path = ../headers/Midi/MidiControllerConfig.h; sourceTree = "<group>"; };
 		693479C318085F5F006AE7C9 /* WindowData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WindowData.h; path = ../headers/WindowData.h; sourceTree = "<group>"; };
-		69493186184A39ED0018BE3B /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _kiss_fft_guts.h; path = ../../blocks/KissFFT/kiss/_kiss_fft_guts.h; sourceTree = "<group>"; };
-		69493187184A39ED0018BE3B /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fft.c; path = ../../blocks/KissFFT/kiss/kiss_fft.c; sourceTree = "<group>"; };
-		69493188184A39ED0018BE3B /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fft.h; path = ../../blocks/KissFFT/kiss/kiss_fft.h; sourceTree = "<group>"; };
-		69493189184A39ED0018BE3B /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fftr.c; path = ../../blocks/KissFFT/kiss/kiss_fftr.c; sourceTree = "<group>"; };
-		6949318A184A39ED0018BE3B /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fftr.h; path = ../../blocks/KissFFT/kiss/kiss_fftr.h; sourceTree = "<group>"; };
-		6949318B184A39ED0018BE3B /* KissFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KissFFT.cpp; path = ../blocks/KissFFT/KissFFT.cpp; sourceTree = "<group>"; };
-		6949318C184A39ED0018BE3B /* KissFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KissFFT.h; path = ../blocks/KissFFT/KissFFT.h; sourceTree = "<group>"; };
+		69493186184A39ED0018BE3B /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _kiss_fft_guts.h; path = ../blocks/KissFFT/src/kiss/_kiss_fft_guts.h; sourceTree = "<group>"; };
+		69493187184A39ED0018BE3B /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fft.c; path = ../blocks/KissFFT/src/kiss/kiss_fft.c; sourceTree = "<group>"; };
+		69493188184A39ED0018BE3B /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fft.h; path = ../blocks/KissFFT/src/kiss/kiss_fft.h; sourceTree = "<group>"; };
+		69493189184A39ED0018BE3B /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kiss_fftr.c; path = ../blocks/KissFFT/src/kiss/kiss_fftr.c; sourceTree = "<group>"; };
+		6949318A184A39ED0018BE3B /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kiss_fftr.h; path = ../blocks/KissFFT/src/kiss/kiss_fftr.h; sourceTree = "<group>"; };
+		6949318B184A39ED0018BE3B /* KissFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KissFFT.cpp; path = ../blocks/KissFFT/src/KissFFT.cpp; sourceTree = "<group>"; };
+		6949318C184A39ED0018BE3B /* KissFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KissFFT.h; path = ../blocks/KissFFT/src/KissFFT.h; sourceTree = "<group>"; };
 		69B454C017F9F4D4000312C2 /* VJ_Boilerplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VJ_Boilerplate.h; path = ../headers/VJ_Boilerplate.h; sourceTree = "<group>"; };
 		69B454C417FA0632000312C2 /* AudioAnalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioAnalyzer.cpp; path = ../source/Audio/AudioAnalyzer.cpp; sourceTree = "<group>"; };
 		69B454C517FA0632000312C2 /* AudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioAnalyzer.h; path = ../headers/Audio/AudioAnalyzer.h; sourceTree = "<group>"; };
@@ -371,15 +371,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				693479C118075767006AE7C9 /* AudioViz.cpp in Sources */,
-				6949318E184A39ED0018BE3B /* kiss_fftr.c in Sources */,
 				691A7C211801D14A001933E0 /* ColorOffset.cpp in Sources */,
 				693479831805E220006AE7C9 /* Midi.cpp in Sources */,
 				30541C3DB06443D892DAF51D /* VJ_Boilerplate.cpp in Sources */,
-				6949318F184A39ED0018BE3B /* KissFFT.cpp in Sources */,
 				6919F93617F8B30B00C48A7C /* Visual.cpp in Sources */,
 				691A7C1B1801CD7D001933E0 /* Shader.cpp in Sources */,
 				6934796C1805DAEB006AE7C9 /* RtMidi.cpp in Sources */,
 				69B454C617FA0632000312C2 /* AudioAnalyzer.cpp in Sources */,
+				6949318F184A39ED0018BE3B /* KissFFT.cpp in Sources */,
+				6949318E184A39ED0018BE3B /* kiss_fftr.c in Sources */,
 				6949318D184A39ED0018BE3B /* kiss_fft.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +491,7 @@
 					"-D__MACOSX_CORE__",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/** ../resources ../source/** ../headers/**";
 			};
 			name = Debug;
 		};
@@ -512,7 +512,7 @@
 					"-D__MACOSX_CORE__",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/** ../resources ../source/** ../headers/**";
 			};
 			name = Release;
 		};
