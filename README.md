@@ -25,4 +25,19 @@ The shader component is holding basic functionality to create and update shader.
 
 ## Visuals
 
+## License
+
 The visuals component is the heart of the boilerplate...
+
+The KissFFT Library included in this repository belongs to BanTheRewind
+https://github.com/BanTheRewind/Cinder-KissFft/
+
+The RTMidi Library included in this repository belongs to Gary P. Scavone
+http://www.music.mcgill.ca/~gary/rtmidi/
+
+My code is published under the MIT/GPL.
+
+* http://en.wikipedia.org/wiki/MIT_License
+* http://en.wikipedia.org/wiki/GNU_General_Public_License
+
+If you make enhancements or code changes i would love to know so i can reshare your findings.
